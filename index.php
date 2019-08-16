@@ -66,4 +66,34 @@
   </div>
 </main>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-3">
+      s3 obj (https)<br>
+      <img src="//edy-web.s3.ap-northeast-2.amazonaws.com/m.jpg" alt="s3 obj" height="250" width="250">
+    </div>
+    <div class="col-3">
+      s3 static host-route (http)<br>
+      <img src="http://s3test.edygo.ml/m.jpg" alt="s3 static" height="250" width="250">
+    </div>
+    <div class="col-3">
+      s3 cdn (https)<br>
+      <img src="//r.edygo.ml/m.jpg" alt="s3 cdn" height="250" width="250">
+    </div>
+    <div class="col-3">
+      relative /res<br>
+      <img src="res/m.jpg" alt="relative" height="250" width="250">
+    </div>
+  </div>
+  <div class="row mt-4 ml-2">
+    <form>
+      <input type="text" value="" id="imgurl" size="96">
+      <input type="button" onclick="document.getElementById('imgview').src=document.getElementById('imgurl').value" value="Show">
+    </form>
+  </div>
+  <div class="row mt-2 ml-2 mb-4">
+    <img id="imgview" height="300">
+  </div>
+</div>
+
 <?php include('includes/footer.php'); ?>
