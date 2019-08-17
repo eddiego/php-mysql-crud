@@ -88,7 +88,7 @@
   <div class="row mt-4 ml-2">
     <form>
       <input type="text" value="" id="imgurl" size="96">
-      <input type="button" onclick="document.getElementById('imgview').src=document.getElementById('imgurl').value" value="Show">
+      <input type="button" onclick="document.getElementById('imgview').src=document.getElementById('imgurl').value" value="Display">
     </form>
   </div>
   <div class="row mt-2 ml-2 mb-4">
