@@ -87,6 +87,7 @@
   </div>
   <div class="row mt-4 ml-2">
     <form>
+      <span>url:<span>
       <input type="text" value="" id="imgurl" size="96">
       <input type="button" onclick="document.getElementById('imgview').src=document.getElementById('imgurl').value" value="Display">
     </form>
