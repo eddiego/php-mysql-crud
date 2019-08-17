@@ -1,5 +1,5 @@
 #!/bin/bash
-SRC_DIR=/home/ec2-user/php-mysql-crud
+SRC_DIR=/home/ec2-user/bundle
 DEPLOY_DIR=/var/www/html
 
 cd ${SRC_DIR}
