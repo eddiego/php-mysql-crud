@@ -1,0 +1,18 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ec2-user/php-mysql-crud
+    overwrite: true
+hooks:
+  ApplicationStop:
+    - location: scritps/stop_server.sh
+      timeout: 30
+      runas: root
+  AfterInstall:
+    - location: scritps/deploy.sh
+      timeout: 10
+      runas: root
+    - location: scritps/start_server.sh
+      timeout: 30
+      runas: root
